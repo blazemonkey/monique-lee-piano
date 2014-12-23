@@ -1,0 +1,19 @@
+#splash {
+	position: relative;
+	width: 100%;
+}
+
+#splash p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-size: 56px;
+}
+
+#homeImage1 {
+	width: 100%;
+	height: auto;
+	display: block;
+}

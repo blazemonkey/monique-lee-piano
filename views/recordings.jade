@@ -1,0 +1,28 @@
+extends layout
+
+block body
+  div#content 
+    center#recordingCatTitle choose a category
+
+    div#recordingCats
+      div.recordingImgDiv1
+        a(href='/recordings/exams')
+          img.recordingImg(src="/images/recording1.png")
+        a(href='/recordings/exams')
+          p examination pieces
+      //div.recordingImgDiv2
+        //a(href='/recordings/exams')
+          //img.recordingImg(src="/images/recording1.png")
+        //a(href='/recordings/exams')
+          //p examination pieces
+     //div.recordingImgDiv3
+        //a(href='/recordings/exams')
+          //img.recordingImg(src="/images/recording1.png")
+        //a(href='/recordings/exams')
+          //p examination pieces                  
+
+    script.
+      $('.recordingImg').hover(
+      function() { $(this).addClass('hover') }, 
+      function() { $(this).removeClass('hover') }
+      );

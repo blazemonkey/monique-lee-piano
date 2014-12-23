@@ -1,0 +1,13 @@
+{
+	"hello": "hello world",
+	"menu": {
+		"home": "home",
+		"about": "about me",
+		"recordings": "recordings",
+		"blog": "blog",
+		"contact": "contact"
+	},
+	"home": {
+		"splash": "pianist / teacher"
+	}
+}
