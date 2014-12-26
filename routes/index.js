@@ -52,4 +52,9 @@ router.get('/contact', function(req, res)
     res.render('contact');
 });
 
+router.get('/*', function(req, res)
+{
+	res.render('404');
+});
+
 module.exports = router;
