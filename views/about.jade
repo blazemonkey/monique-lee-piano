@@ -3,7 +3,15 @@ extends layout
 block body
 
   div#content
-    p#pageTitle a little about by myself
+    p.pageTitle a little about by myself
+    span
+
+    img#aboutLeft.imageBorder(src="/images/about1.jpg")
+    div#aboutRight
+      p(style="font-size:24px") #{__('about.subtitle')}<br><br>
+      p 音樂不僅是國際語言，還能為人帶來快樂。<br><br>
+      p 我從小學習鋼琴，音樂是我的興趣，也是我的職業。我一直認為，教導學生享受音樂，跟指導學生鋼琴技巧同樣重要。我希望能感染更多人喜歡音樂，讓他們發挖出屬於自己的無限可能性！
+
 
     // - for (var i = 0; i < 100; i++) {
     //   p about

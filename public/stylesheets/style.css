@@ -17,9 +17,32 @@ html {
     background: linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* W3C */     
 }
 
-body, p, ul {
+p, ul {
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-test-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.inline {
+	display: inline;
+	vertical-align: top;
+	padding: 10px;
 }
 
 #container
@@ -89,12 +112,25 @@ body, p, ul {
   	font-size: 18px;
   	color: black;
   	margin: 120px auto 50px auto;
+  	padding: 0px 20px;
   	width: 1000px;
 }
 
-#pageTitle {
+#content:after {
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.pageTitle {
 	font-size: 30px;
-	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.imageBorder {
+	border: 1px solid lightgray;
+	padding: 10px;
 }
 
 
@@ -152,6 +188,7 @@ body, p, ul {
 #footer {
 	width: 1000px;
 	margin: 10px auto;
+	padding: 0px 20px;
 	border-top: 1px solid lightgray;
 	clear: both;
 }
@@ -183,3 +220,12 @@ body, p, ul {
 	color: skyblue;
 }
 
+#aboutLeft {
+	float: left;
+	width: 300px;
+}
+
+#aboutRight {
+	margin-left: 310px;
+	padding-left: 20px;
+}
