@@ -4,3 +4,26 @@ block body
 
   div#content
     p.pageTitle got questions?
+    
+    div#contactLeft 
+      p If you have any questions about lessons or anything else, give me a email or find me on social media!
+      br
+    img#contactRight.imageBorder(src="/images/contact1.jpg")
+
+    a(href='mailto:kiki_lee8752@hotmail.com')
+      img.contactIcons(src='/images/mail.png', data-alt-src='images/mail_c.png', width=36, height=36)
+
+    a(href='http://www.facebook.com/monique.lee94')
+      img.contactIcons(src='/images/facebook.png', data-alt-src='images/facebook_c.png', width=36, height=36)
+
+   script.
+     var sourceSwap = function() {
+       var $this = $(this);
+       var newSource = $this.data('alt-src');
+       $this.data('alt-src', $this.attr('src'));
+       $this.attr('src', newSource);
+     }
+
+     $(function () {
+       $('img.contactIcons').hover(sourceSwap, sourceSwap);
+     });
