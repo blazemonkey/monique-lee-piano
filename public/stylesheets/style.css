@@ -31,6 +31,10 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+a img { 	
+ 	border: 0px;
+}
+
 .floatLeft {
 	float: left;
 }
@@ -239,6 +243,27 @@ body {
 	float: right;
 }
 
-.contactIcons {
+#mailIcon {
 	margin: 5px;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background: url(/images/mail_sp.png) no-repeat;
+}
+
+#mailIcon:hover {
+	background-position: 0 -42px;
+}
+
+
+#facebookIcon {
+	margin: 5px;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background: url(/images/facebook_sp.png) no-repeat;
+}
+
+#facebookIcon:hover {
+	background-position: 0 -42px;
 }
