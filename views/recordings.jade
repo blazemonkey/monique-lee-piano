@@ -1,28 +1,50 @@
 extends layout
 
 block body
-  div#content 
-    center#recordingCatTitle choose a category
 
-    div#recordingCats
-      div.recordingImgDiv1
-        a(href='/recordings/exams')
-          img.recordingImg(src="/images/recording1.png")
-        a(href='/recordings/exams')
-          p examination pieces
-      //div.recordingImgDiv2
+  div#content
+    p.pageTitle recordings for fun
+
+    p Have a listen of some of my favourite pieces that I've recorded during my spare time.
+
+    br 
+
+    div.imageBorder
+      a(href='recordings/exams')
+        div#recording1Image
+          div.recordingText
+            div.recordingTitle examination pieces
+            div.recordingDescription some of my favourite pieces from past abrsm exams, as well as pieces from more recent years!
+
+    br 
+    
+    div.imageBorder
+      a(href='recordings/popular')
+        div#recording2Image
+          div.recordingText
+            div.recordingTitle classical music
+            div.recordingDescription pieces ranging from anything you might hear on the radio or tv, such as anime, dramas and pop!
+
+    br 
+    
+    div.imageBorder
+      a(href='recordings/classical')
+        div#recording3Image
+          div.recordingText
+            div.recordingTitle classical
+            div.recordingDescription pieces ranging from anything you might hear on the radio or tv, such as anime, dramas and pop!
+
+    //center#recordingCatTitle choose a 
+
+    //div#recordingCats
+      //div.recordingImgDiv1
         //a(href='/recordings/exams')
           //img.recordingImg(src="/images/recording1.png")
         //a(href='/recordings/exams')
           //p examination pieces
-     //div.recordingImgDiv3
-        //a(href='/recordings/exams')
-          //img.recordingImg(src="/images/recording1.png")
-        //a(href='/recordings/exams')
-          //p examination pieces                  
-
-    script.
-      $('.recordingImg').hover(
-      function() { $(this).addClass('hover') }, 
-      function() { $(this).removeClass('hover') }
-      );
+     
+//    script.
+//      $('.recordingImg').hover(
+//      function() { $(this).addClass('hover') }, 
+//      function() { $(this).removeClass('hover') }
+//      );

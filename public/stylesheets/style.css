@@ -137,52 +137,57 @@ a img {
 	padding: 10px;
 }
 
-
-#recordingCatTitle {
-	font-size: 36px;
+.imageBorder a {
+	text-decoration: none
 }
 
-#recordingCats {
-	margin-top: 20px;
-	position: relative;
-	width: 100%;
-	z-index: 99;
+#recording1Image {
+	height: 250px;
+ 	background: url("/images/recording2.png");
+ 	background-repeat: no-repeat;
 }
 
-.recordingImgDiv1, .recordingImgDiv2, .recordingImgDiv3 {
-	float: left;
-
+#recording2Image {
+	height: 250px;
+ 	background: url("/images/recording3.png");
+ 	background-repeat: no-repeat;
 }
 
-.recordingImgDiv1 p {
-	top: 0;
-	position: absolute;
-	margin: 10px;
-	font-size: 30px;
+#recording3Image {
+	height: 250px;
+ 	background: url("/images/recording4.png");
+ 	background-repeat: no-repeat;
 }
 
-.recordingImgDiv2 p {
-	top: 0;
-	position: absolute;
-	margin: 10px;
-	font-size: 30px;
+.recordingText {
+	width: 538px;
 }
 
-.recordingImgDiv3 p {
-	top: 0;
-	position: absolute;
-	margin: 10px;
-	font-size: 30px;
+.recordingTitle {
+	font-size: 24px;
+	color: white;
+	background-color: black;
+	padding: 10px;
 }
 
-.recordingImgDiv1 a, .recordingImgDiv2 a, .recordingImgDiv3 a {
-	color: black;
+.recordingDescription {
+	font-size: 18px;
+	color: white;
+	padding: 10px;
+	opacity: 0;
+	transform: translate(0px, 130px);
+	transition: opacity 0.5s ease-in-out;
+	transition: transform 0.2s ease-out;
 }
 
-.recordingImg {
-	border: 1px solid lightgray;
-	display: block;
-	max-width: 100%;
+#recording1Image:hover > .recordingText > .recordingDescription {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
+
+#recording2Image:hover > .recordingText > .recordingDescription {
+	opacity: 1;
+	transform: translate(0px, 0px);
 }
 
 .hover {
