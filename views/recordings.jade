@@ -5,31 +5,33 @@ block body
   div#content
     p.pageTitle recordings for fun
 
-    p Have a listen of some of my favourite pieces that I've recorded during my spare time.
+    div#recordingDescription
+      p Have a listen of some of my favourite pieces that I've recorded during my spare time.
 
-    br 
-
-    div.imageBorder
-      a(href='recordings/exams')
+    div.imageBorder.recordingImage
+      a(href='recordings/compositions')
         div#recording1Image
+          div.recordingText
+            div.recordingTitle compositions
+            div.recordingDescription my own original attempts at composing!
+
+    div.imageBorder.recordingImage
+      a(href='recordings/exams')
+        div#recording2Image
           div.recordingText
             div.recordingTitle examination pieces
             div.recordingDescription some of my favourite pieces from past abrsm exams, as well as pieces from more recent years!
 
-    br 
-    
-    div.imageBorder
+    div.imageBorder.recordingImage
       a(href='recordings/popular')
-        div#recording2Image
+        div#recording3Image
           div.recordingText
             div.recordingTitle popular music
             div.recordingDescription pieces ranging from anything you might hear on the radio or tv, such as anime, dramas and pop!
 
-    br 
-    
-    div.imageBorder
+    div.imageBorder.recordingImage
       a(href='recordings/classical')
-        div#recording3Image
+        div#recording4Image
           div.recordingText
             div.recordingTitle classical
             div.recordingDescription pieces from the renaissance, baroque, classical, romantic and 20th century

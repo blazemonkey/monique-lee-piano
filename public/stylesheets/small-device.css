@@ -1,0 +1,177 @@
+@media only screen and (max-device-width: 480px) {
+	html {
+		overflow-y: none;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;		
+	}
+
+	.imageBorder {
+		border: none;
+		padding: 0px;
+	}
+
+	#container {
+		width: 100%;
+		height: 60px;
+		vertical-align: middle;
+	}
+
+	#title {
+		margin: 10px 10px 10px 10px; 
+		clear: left;
+	}
+
+	.header {  	
+	  	float: right;
+	  	margin: 10px;
+	}
+
+	#content {
+		width: 100%;
+		min-width: 100%;
+		margin: 50px auto 0px auto;
+		padding: 0px;
+	}
+
+	.pageTitle {
+		margin: 80px 0px 20px 15px;
+	}
+
+	#aboutLeft {
+		display: block;
+		width: 100%;
+	}
+
+	#aboutRight {		
+		margin: 0px;
+		padding: 10px;
+	}
+
+	#contactLeft {
+		display: block;
+		width: 90%;
+		padding: 10px;
+		margin: 0px;
+	}
+
+	#contactRight {
+		display: block;
+		width: 100%;
+	}
+
+	#recordingDescription p {
+		padding: 10px;
+	}
+
+	.recordingText {
+		width: 100%;
+	}
+
+	.recordingDescription {
+		display: none;
+		opacity: 100;
+		transform: translate(0px, 0px);
+	}
+
+	#recording1Image:hover > .recordingText > .recordingDescription {
+		opacity: 1;
+	}
+
+	#recording2Image:hover > .recordingText > .recordingDescription {
+		opacity: 1;
+	}
+
+	#recording3Image:hover > .recordingText > .recordingDescription {
+		opacity: 1;
+	}
+
+	#recording4Image:hover > .recordingText > .recordingDescription {
+		opacity: 1;
+	}
+
+	#mailIcon {
+		background: url(/images/mail_sp.png) no-repeat;
+		background-position: 0 -42px;
+	}
+
+	#mailIcon:hover {
+		background-position: 0px;
+	}
+
+
+	#facebookIcon {
+		background: url(/images/facebook_sp.png) no-repeat;
+		background-position: 0 -42px;
+	}
+
+	#facebookIcon:hover {
+		background-position: 0px;
+	}
+
+	#footer {
+		width: 90%;
+		padding-left: 10px;
+		margin: 0px;
+	}
+
+}
+
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+	#homeImage1 {
+		width: 100%;
+		height: 400px;		
+		display: block;
+	}
+
+	.header ul {
+		font-size: 1.25em;
+	  	padding: 0;
+	  	list-style-type: none;
+	}
+
+	.header ul li {
+		display: inline;
+		padding: 0px 10px 0px 10px;
+	}
+
+	#splash p {
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	.recordingImage {
+		margin: 0px;
+	}
+
+	#recording1Image {
+		width: 100%;
+		height: 250px;
+		background-position: -600px 0px;
+	}
+
+	#recording2Image {
+		width: 100%;
+		height: 250px;
+		background-position: -600px 0px;
+	}
+
+	#recording3Image {
+		width: 100%;
+		height: 250px;
+		background-position: -600px 0px;
+	}
+
+	#recording4Image {
+		width: 100%;
+		height: 250px;
+		background-position: -600px 0px;
+	}
+
+}
+
+@media only screen and (max-device-width: 480px) and (orientation: landscape) {
+
+}
