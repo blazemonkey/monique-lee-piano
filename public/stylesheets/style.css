@@ -203,6 +203,16 @@ a img {
 	transform: translate(0px, 0px);
 }
 
+.recording-container {
+	width: 580px;
+	height: 326px;
+}
+
+.video-js {
+	width: 100% !important;
+	height: 100% !important;
+}
+
 .hover {
 	backgroud-color: black;
 }

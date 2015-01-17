@@ -21,7 +21,7 @@
 
 	#title {
 		margin: 10px 10px 10px 10px; 
-		clear: left;
+		clear: left;	
 	}
 
 	.header {  	
@@ -48,18 +48,6 @@
 	#aboutRight {		
 		margin: 0px;
 		padding: 10px;
-	}
-
-	#contactLeft {
-		display: block;
-		width: 90%;
-		padding: 10px;
-		margin: 0px;
-	}
-
-	#contactRight {
-		display: block;
-		width: 100%;
 	}
 
 	#recordingDescription p {
@@ -112,9 +100,19 @@
 	}
 
 	#footer {
-		width: 90%;
-		padding-left: 10px;
+		width: 100%;
 		margin: 0px;
+		padding: 0px;
+	}
+
+	#footer #left {		
+		margin: 0px;
+		padding: 5px 0px 0px 10px;
+	}
+
+	#footer #right {		
+		margin: 0px;
+		padding: 5px 10px 0px 0px;		
 	}
 
 }
@@ -170,8 +168,70 @@
 		background-position: -600px 0px;
 	}
 
+	.recording-container {
+	width: 100%;
+	height: 270px;
+	}
+
+	#contactLeft {
+		display: block;
+		width: 90%;
+		padding: 10px;
+		margin: 0px;
+	}
+
+	#contactRight {
+		display: block;
+		width: 100%;
+	}
+
 }
 
 @media only screen and (max-device-width: 480px) and (orientation: landscape) {
+	#aboutLeft {
+		padding: 10px;
+		width: 200px;
+		height: auto;
+	}
 
+	.recordingImage {
+		margin: 0px;
+	}
+
+	#recording1Image {
+		width: 100%;
+		height: 250px;
+		background-position: -500px 0px;
+	}
+
+	#recording2Image {
+		width: 100%;
+		height: 250px;
+		background-position: -500px 0px;
+	}
+
+	#recording3Image {
+		width: 100%;
+		height: 250px;
+		background-position: -500px 0px;
+	}
+
+	#recording4Image {
+		width: 100%;
+		height: 250px;
+		background-position: -500px 0px;
+	}	
+
+	#contactLeft {
+		padding: 10px;
+		margin: 0px;
+		width: 90%;
+	}
+
+	#contactRight {
+		width: 200px;
+		height: auto;
+		float: left;
+		padding: 10px;
+	}
 }

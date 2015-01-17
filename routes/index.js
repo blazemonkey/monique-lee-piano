@@ -1,60 +1,54 @@
-var express = require('express');
-var router = express.Router();
-
-/* GET home page. */
-// router.get('/', function(req, res) {
-//  res.render('index', { title: 'Express' });
-// });
-
-router.get('*', function(req, res, next)
+module.exports = function() 
 {
-	var first = req.path.indexOf('/');
-	var sec = req.path.indexOf('/', first + 1);
-	var path = '';
+	var express = require('express');
+	var app = express();
 
-	if (sec === -1)
-		path = req.path;
-	else
-		path = req.path.substring(first, sec);
+	app.get('*', function(req, res, next)
+	{
+		var first = req.path.indexOf('/');
+		var sec = req.path.indexOf('/', first + 1);
+		var path = '';
 
-	res.locals.path = path;
-	next();
-});
+		if (sec === -1)
+			path = req.path;
+		else
+			path = req.path.substring(first, sec);
 
-router.get('/setlocale/:lang', function(req, res)
-{	
-	res.cookie('locale', req.params.lang);
-	res.redirect('back');
-});
+		res.locals.path = path;
+		next();
+	});
 
-router.get('/', function(req, res)
-{
-    res.render('index');
-});
+	app.get('/setlocale/:lang', function(req, res)
+	{	
+		res.cookie('locale', req.params.lang);
+		res.redirect('back');
+	});
 
-router.get('/about', function(req, res)
-{
-    res.render('about');
-});
+	app.get('/', function(req, res)
+	{
+	    res.render('index');
+	});
 
-router.get('/recordings', function(req, res)
-{
-    res.render('recordings');
-});
+	app.get('/about', function(req, res)
+	{
+	    res.render('about');
+	});
 
-router.get('/blog', function(req, res)
-{
-    res.render('blog');
-});
+	app.get('/blog', function(req, res)
+	{
+	    res.render('blog');
+	});
 
-router.get('/contact', function(req, res)
-{
-    res.render('contact');
-});
+	app.get('/contact', function(req, res)
+	{
+	    res.render('contact');
+	});
 
-router.get('/*', function(req, res)
-{
-	res.render('404');
-});
+	app.get('/*', function(req, res)
+	{
+		res.render('404');
+	});
 
-module.exports = router;
+	return app;
+
+}();

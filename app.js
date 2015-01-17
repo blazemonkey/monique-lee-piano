@@ -6,10 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var i18n = require('i18n');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
-
 var app = express();
+var routes = require('./routes/index');
+var recordings = require('./routes/recordings');
 
 i18n.configure(
 {
@@ -32,8 +31,8 @@ app.use(cookieParser());
 app.use(i18n.init);
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/recordings', recordings);
 app.use('/', routes);
-app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
